@@ -1,0 +1,11 @@
+
+.detail-content{
+  height: 150px;
+  &::-webkit-scrollbar{
+      width: 6px;
+  }
+  &::-webkit-scrollbar-thumb{
+      background-color: #03554e;
+      border-radius: 100px;
+  }
+}

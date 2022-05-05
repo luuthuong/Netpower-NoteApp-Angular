@@ -1,0 +1,13 @@
+<section class="mt-3  h-75 overflow-auto wraper-content">
+  <div  class="container p-2">
+      <div  class="row  g-2 row-cols-1 row-cols-lg-4 ">
+        <ng-container *ngFor="let item of dataJSON">
+          <div class="col ">
+            <div class="form-detail">
+              <app-detail  class=" p-2 text-left" ></app-detail>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+  </div>
+</section>

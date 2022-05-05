@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important;
+  width: 100vw;
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
