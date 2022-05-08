@@ -1,5 +1,14 @@
-<ng-container *ngIf="active">
-  <app-form class="form" ></app-form>
+<ng-container *ngIf="stateForm.active">
+  <app-form  (eventData)="submitData($event)" class="form" >
+    <ng-template *ngIf="stateForm.isAdd==true;then btnadd else btnedit "></ng-template>
+  <ng-template #btnadd>
+    <button (click)="onAdd()"
+      class="btn btn-outline-success text-white border-2">ADD</button>
+  </ng-template>
+  <ng-template #btnedit>
+    <button (click)="onEdit()" class="btn btn-outline-success text-white border-2">EDIT</button>
+  </ng-template>
+  </app-form>
 </ng-container>
 <app-noteapp  class="app h-100 w-75 app shadow-lg"></app-noteapp>
 

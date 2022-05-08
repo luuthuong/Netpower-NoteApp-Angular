@@ -10,6 +10,8 @@ import { NoteappComponent } from './noteapp/noteapp.component';
 import { FormComponent } from './components/form/form.component';
 import { BodyComponent } from './components/body/body.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BasecomponentComponent } from './basecomponent/basecomponent.component';
+import { DetalContentComponent } from './components/detal-content/detal-content.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NoteappComponent,
     FormComponent,
     BodyComponent,
+    BasecomponentComponent,
+    DetalContentComponent,
   ],
   imports: [
     BrowserModule,

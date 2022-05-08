@@ -6,14 +6,11 @@ import { Component, OnInit, Output ,EventEmitter, OnChanges, SimpleChanges} from
   styleUrls: ['./noteapp.component.scss']
 })
 export class NoteappComponent implements OnInit {
-  @Output() active=new EventEmitter<boolean>();
-  public state!:boolean;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-  public onActiveForm(active:boolean){
-    this.state=active;
-  }
+
 
 }

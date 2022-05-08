@@ -5,15 +5,19 @@ import { NoteService } from './../../services/note.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  public  state=false
+export class HeaderComponent  implements OnInit {
+
   constructor( private noteService:NoteService) {}
 
   ngOnInit(): void {
 
   }
   ActiveForm(){
-    this.noteService.activeForm(true)
+    localStorage.removeItem('current')
+    this.noteService.activeForm({
+      active:true,
+      isAdd:true
+    })
   }
 
 }

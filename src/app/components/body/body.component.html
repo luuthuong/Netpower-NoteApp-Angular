@@ -4,7 +4,7 @@
         <ng-container *ngFor="let item of dataJSON">
           <div class="col ">
             <div class="form-detail">
-              <app-detail  class=" p-2 text-left" ></app-detail>
+              <app-detail [note]="item"  class=" p-2 text-left" ></app-detail>
             </div>
           </div>
         </ng-container>
